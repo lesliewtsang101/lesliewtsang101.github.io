@@ -63,9 +63,8 @@ body{
 }
 
 .page_posts:hover{
-   animation-fill-mode: forwards;
    animation-name: changescale, change;
-   animation-duration: 1s;
+   animation-duration: .5s;
    animation-timing-function: ease-out;
 }
 
