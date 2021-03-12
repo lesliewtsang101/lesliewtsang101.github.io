@@ -66,6 +66,7 @@ body{
    animation-name: changescale, change;
    animation-duration: .5s;
    animation-timing-function: ease-out;
+	outline: 1px solid transparent;
 }
 
 @keyframes changescale{
