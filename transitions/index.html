@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transitions</title>
+
+   
+
+   <style>
+
+
+   	body{
+   		font-family: sans-serif;
+   		font-size:60px;
+   		color:#FFF;
+   	}
+
+   	.cardholder{
+		maxwidth:1200px;
+        text-align: center;
+
+   	}
+      
+    .card{
+       width:100%;
+	   height: 99vh;
+       background-color:lightblue;
+       display: inline-block;
+    }
+
+    .card img{
+      width:20%;
+	  position: absolute;
+  	  top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+	  -webkit-filter: blur(20px);
+		filter: blur(20px);
+		transition: 500ms linear;
+    }
+
+	   
+	.left {
+	  position: absolute;
+  	  top: 50%;
+      left: 10%;
+      text-align: left;
+	  -webkit-filter: drop-shadow(0px 0px 0px gray);
+	  filter: drop-shadow(0px 0px 0px gray);
+	  transition: 500ms linear;
+    }
+	   
+	  .left:hover { 
+		 transform: scale(1.1) translatex(50px);
+		-webkit-filter: drop-shadow(30px 10px 4px gray);
+		filter: drop-shadow(30px 10px 4px gray);
+	   }
+	 
+	 .right {
+	  position: absolute;
+  	  top: 50%;
+      right: 10%;
+     text-align: right;
+	  -webkit-filter: drop-shadow(0px 0px 0px gray);
+	  filter: drop-shadow(0px 0px 0px gray);
+	  transition: 500ms linear;
+		 
+    }
+
+      .right:hover { 
+		 transform: scale(1.1) translatex(-50px);
+		-webkit-filter: drop-shadow(30px 10px 4px gray);
+		filter: drop-shadow(30px 10px 4px gray);
+	   }
+
+    .card:hover img{
+
+        -webkit-filter: blur(0px);
+		filter: blur(0px);
+		transform: rotate(10deg) scale(1.1) translateY(-40%) translateX(40%);
+    }
+
+
+    .card_text{
+    	margin:0;
+    }
+
+
+
+   </style>
+
+</head>
+<body>
+	
+		   <div class="left"><p>How Cute</p></div>
+	
+       	   <div class="cardholder">
+			 <div class="card"> <img src= "img/penguin.png" alt="penguin"> </div>
+			   
+		   <div class="right"><p>Is That?</p></div>
+       
+	</div>
+
+</body>
+</html>
